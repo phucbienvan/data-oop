@@ -109,6 +109,7 @@
                     die('Cau truy van sai');
                 }
                 // return array();
+                $result->execute();
                 $row = $result->fetch(PDO::FETCH_ASSOC);
                 
                 $result->closeCursor();
