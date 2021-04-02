@@ -23,7 +23,7 @@ class business extends database{
     }
  
     function select_by_id($id){
-        $sql = "select from ".$this->_table_name." where ".$this->_key." = ".(int)$id;
+        $sql = "select * from ".$this->_table_name." where ".$this->_key." = ".(int)$id;
         return $this->get_row($sql);
     }
 }
